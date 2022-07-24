@@ -5850,12 +5850,10 @@ const ni = [
   en,
   rn,
   Ir
-], ai = {
-  install(a) {
-    ni.forEach((r) => {
-      a.component(r.name, r);
-    });
-  }
+], ai = (a) => {
+  ni.forEach((r) => {
+    a.component(r.name, r);
+  });
 };
 export {
   Kr as MAlert,
@@ -5875,5 +5873,5 @@ export {
   en as MSidebarMenu,
   Qr as MTabs,
   Ir as MTitle,
-  ai as default
+  ai as install
 };

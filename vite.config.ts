@@ -36,7 +36,10 @@ export default defineConfig({
     rollupOptions: {
       external: ["vue"],
       output: {
-        globals: { vue: "Vue" },
+        exports: "named",
+        globals: {
+          vue: "Vue",
+        },
       },
     },
   },

@@ -38,13 +38,11 @@ const components = [
   MTitle,
 ]
 
-export default {
-  install(app: App) {
-    components.forEach((el: any) => {
-      app.component(el.name, el)      
-    })
-  },
-} as Plugin
+export const install: Plugin = (app: App) => {
+  components.forEach((el: any) => {
+    app.component(el.name, el)      
+  })
+} 
 
 export { default as MSelect } from './components/ui/MSelect'
 export { default as MAlert } from './components/ui/MAlert'

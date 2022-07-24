@@ -17,6 +17,7 @@
   "types": "dist/types/index.d.ts",
   "dependencies": {
     "core-js": "^3.8.3",
+    "meet-ui": "git+https://github.com/NMaXIMuSN/test",
     "tailwind-scrollbar-hide": "^1.1.7",
     "vue": "^3.2.13",
     "vuedraggable": "^4.1.0"
