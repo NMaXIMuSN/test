@@ -1,0 +1,28 @@
+.m-select {
+  &__activator {
+    * {
+      cursor: pointer;
+    }
+  }
+
+  &__input {
+    .m-select__input-chevron {
+      transition: .3s ease;
+    }
+
+    &-active {
+      .m-select__input-chevron {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__window--wrap {
+    display: flex;
+
+    > *:not(:last-child) {
+      margin-right: 12px;
+      height: max-content;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.table {
+  &__header {
+    .sort {
+      &-desc {
+        transform: rotate(180deg);
+        > * {
+          fill: $black-900;
+        }  
+      }
+
+      &-asc {
+        transform: rotate(0deg);
+        > * {
+          fill: $black-900;
+        }
+      }
+    }
+  }
+  &__row {
+    &:hover {
+      > .table__arrow {
+        svg {
+          * {
+            fill: $black-900;
+          }
+        }
+      }
+    }
+  }
+  &__arrow {
+    svg {
+      * {
+        transition: .3s ease;
+      }
+    }
+  }
+}

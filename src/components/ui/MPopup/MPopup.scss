@@ -1,0 +1,24 @@
+.popup {
+  max-height: calc(100% - 100px);
+}
+
+.popup-enter-active,
+.popup-leave-active {
+  transition: all .3s ease-out;
+
+  > .popup,
+  &::before {
+    transition: all .3s ease-out;
+  }
+}
+
+.popup-enter-from,
+.popup-leave-to {
+  &::before {
+    opacity: 0;
+  }
+
+  > .popup {
+    transform: scale(0);
+  }
+}

@@ -1,0 +1,53 @@
+.ui-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  border-radius: 12px;
+
+  &__sm {
+    padding: 0 8px;
+    border-radius: 6px;
+    min-height: 24px;
+    font-size: 12px;
+  }
+
+  > .prepend-icon > * {
+    width: 100%;
+    height: 100%;
+  }
+  > .append-icon > * {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:disabled {
+    background-color: $primary-500;
+    pointer-events: none;
+  }
+
+  &__block {
+    width: 100%;
+  }
+
+  &.outline {
+    background-color: transparent;
+    color: $black-900;
+    outline: none;
+    
+    > .loader-svg {
+      color: $black-900;
+    }
+
+    &:disabled {
+      border-color: $black-500;
+    }
+
+    &:disabled,
+    &:disabled > .loader-svg  {
+      color: $black-500;
+    }
+  }
+}

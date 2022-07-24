@@ -1,0 +1,31 @@
+.m-input {
+  outline: none;
+  transition: border-color .3s ease;
+  font-size: 14px;
+  line-height: 140%;
+
+  &--wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 12px;
+    line-height: 120%;
+
+    > .label {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__error {
+    font-size: 12px;
+    line-height: 120%;
+    
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+
+    &--wrap {
+      margin-top: 12px;
+    }
+  }
+}
